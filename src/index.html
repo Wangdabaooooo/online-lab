@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .box {
+            height: 100%;
+            /* 容器(父元素) */
+            display: flex;
+            /* 主轴方向垂直向下(父元素) */
+            flex-direction: column;
+        }
+
+        .top {
+            height: 80px;
+            background: red;
+        }
+
+        .bottom {
+            flex: 1;
+            background: magenta;
+            /* 容器(父元素) */
+            display: flex;
+        }
+
+        .bottom .left {
+            width: 240px;
+            background: green;
+        }
+
+        .bottom .right {
+            flex: 1;
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top"></div>
+        <div class="bottom">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+
+</html>
